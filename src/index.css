@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  /* Primary Brand Colors */
+  --primary: #3167f3;
+  --primary-hover: #2455d6;
+  --primary-light: rgba(49, 103, 243, 0.1);
+  --primary-glow: rgba(49, 103, 243, 0.25);
+
+  /* Backgrounds */
+  --page-bg: #f8fafd;
+  --surface-bg: #ffffff;
+  --surface-elevated: #ffffff;
+  --sidebar-bg: #ffffff;
+  --sidebar-header-bg: #f9fafc;
+
+  /* Borders */
+  --border-color: #e6ebf2;
+  --border-subtle: #eef1f5;
+  --border-focus: #3167f3;
+
+  /* Text Colors */
+  --text-primary: #1e293b;
+  --text-secondary: #536174;
+  --text-muted: #8a94a6;
+  --text-placeholder: #9ba6b6;
+
+  /* Hover & Active States */
+  --hover-bg: #f4f7fb;
+  --active-bg: #ebf2fe;
+
+  /* Table Colors */
+  --table-bg: #ffffff;
+  --table-header-bg: #f8fafc;
+  --table-border: #e2e8f0;
+  --table-th-text: #334155;
+  --table-td-text: #1e293b;
+  --table-row-hover: #f1f5f9;
+
+  /* Shadows */
+  --shadow-card: 0 8px 30px rgba(50, 100, 150, 0.08);
+  --shadow-dropdown: 0 12px 40px rgba(30, 60, 100, 0.16);
+  --shadow-modal: 0 20px 60px rgba(30, 60, 100, 0.18);
+}
+
+:root[data-theme="dark"],
+.dark {
+  /* Primary Brand Colors */
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --primary-light: rgba(59, 130, 246, 0.15);
+  --primary-glow: rgba(59, 130, 246, 0.35);
+
+  /* Backgrounds */
+  --page-bg: #0b0f19;
+  --surface-bg: #111827;
+  --surface-elevated: #1a2234;
+  --sidebar-bg: #0e1424;
+  --sidebar-header-bg: #0b0f19;
+
+  /* Borders */
+  --border-color: #1e293b;
+  --border-subtle: #1e293b;
+  --border-focus: #3b82f6;
+
+  /* Text Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+  --text-placeholder: #64748b;
+
+  /* Hover & Active States */
+  --hover-bg: #1e293b;
+  --active-bg: #1e2e4a;
+
+  /* Table Colors */
+  --table-bg: #111827;
+  --table-header-bg: #1e293b;
+  --table-border: #334155;
+  --table-th-text: #e2e8f0;
+  --table-td-text: #f8fafc;
+  --table-row-hover: #1e293b;
+
+  /* Shadows */
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.5);
+  --shadow-dropdown: 0 12px 40px rgba(0, 0, 0, 0.6);
+  --shadow-modal: 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 160, 180, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 160, 180, 0.5);
+}
